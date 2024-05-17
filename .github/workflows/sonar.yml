@@ -41,5 +41,5 @@ jobs:
         run: trivy image avinashbudhya/tic-tac-toe:latest > trivyimagedeploy.txt
       - name: Deploy to container
         run: docker run -d --name ticgame -p 3000:3000 avinashbudhya/tic-tac-toe:latest
-      -
+      
       
